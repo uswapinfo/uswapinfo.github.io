@@ -78,12 +78,13 @@ $(window).bind("load", function () {
         return Math.floor(val * 1000) / 1000;
     };
 
-    const swapAccounts = ["bswap", "cropswap", "hiveswap", "leodex"];
+    const swapAccounts = ["uswap", "bswap", "cropswap", "hiveswap", "leodex"];
     const swapURLs = {
+        "uswap": "https://uswap.app",
         "bswap": "https://bswap.cc",
         "cropswap": "https://www.dcrops.com/swap",
         "hiveswap": "https://beeswap.dcity.io/convert",
-        "leodex": "https://uswap.app"
+        "leodex": "https://leodex.io"
     };
 
     const processSwapsLiq = async () => {
