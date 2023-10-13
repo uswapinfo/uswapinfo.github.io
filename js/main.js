@@ -233,7 +233,7 @@ $(window).bind("load", function () {
         var dropdownbox = document.getElementById("rpc-nodes-dropdown").value;
         dropdownbox.value = selectedHiveEndpoint;
         dropdownbox.innerHTML = selectedHiveEndpoint;
-    }
+    };
 
     async function initializeEngineAPI() {
         var selectedEngineEndpoint = await getSelectedEngineEndpoint();
@@ -243,5 +243,10 @@ $(window).bind("load", function () {
         var dropdownbox = document.getElementById("herpc-nodes-dropdown").value;
         dropdownbox.value = selectedEngineEndpoint;
         dropdownbox.innerHTML = selectedEngineEndpoint;
-    }               
+    };
+    
+     // Set up a setInterval to call processSwapsLiq() every 3 minutes (3 minutes * 60 seconds)
+    setInterval(function () {
+        processSwapsLiq();
+    }, 3 * 60 * 1000); // 3 minutes * 60 seconds * 1000 milliseconds
 });
