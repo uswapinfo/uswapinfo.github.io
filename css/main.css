@@ -23,6 +23,10 @@ html, body {
         flex-direction: column;
         align-items: center;
     }
+    .htable td {
+        padding: 6px 10px; /* Adjust the padding for smaller screens */
+        font-size: 13px; /* Adjust the font size for smaller screens */
+    }
 }
 
 /* Media query for desktop devices (min-width: 769px) */
@@ -56,7 +60,9 @@ html, body {
 .tb-div {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 15px; /* Add border-radius to round the corners */
+    border-radius: 10px; /* Add border-radius to round the corners */
+    overflow-x: auto; /* Add horizontal scrolling for overflow */
+    border: 1px solid #333333; /* Add a border */
 }
 
 .btn-sm {
@@ -69,14 +75,15 @@ html, body {
 }
 
 .htable {
-    width: 100%;
+    width: auto; /* Set the table width to auto */
+    white-space: nowrap; /* Prevent text wrapping */
     border-collapse: collapse;
     font-size: 16px;
 }
 
 .htable td, .htable th {
     padding: 6px 25px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: normal;
 }
 
