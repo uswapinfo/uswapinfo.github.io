@@ -134,8 +134,8 @@ html, body {
 
 /* Style for the dropdown box */
 .dropdown select {
-    padding: 5px;
-    font-size: 14px;
+    padding: 3px; /* Adjust the padding to reduce height */
+    font-size: 12px; /* Adjust the font size to reduce height */
     width: 150px; /* Adjust the width to your preference */
     border: 1px solid #ccc; /* Add a border */
     border-radius: 5px; /* Add rounded corners */
